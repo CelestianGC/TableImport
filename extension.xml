@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root version="3.0" >
+
+	<properties>
+		<name>CoreRPG/5E - Table Import</name>
+		<version>1.1</version>
+		<loadorder>99</loadorder>
+		<description>
+			<text>Table Import, Simple line by line text list of table entries will be imported and assigned values.</text>
+			<website></website>
+			<author>Celestian</author>
+		</description>
+		<ruleset>
+            <name>5E</name>
+		</ruleset>
+		<ruleset>
+            <name>CoreRPG</name>
+		</ruleset>
+	</properties>
+
+    <announcement text="Table Import - Extension v1.1\rCoreRPG/5E version for Fantasy Grounds\r--by Celestian 2017.10.24" font="emotefont" />
+	<base>		
+        
+        <string name="table_button_import_tooltip">Text import to table.</string>
+        <string name="table_import_window_title">IMPORT TABLE</string>
+        <string name="table_import_text_title">IMPORT TEXT</string>
+        <string name="table_import_text_button">Import</string>
+        <string name="table_import_text_helptext">Paste in the text of the table you want to create. The first line will be the name of the table. Each line after will be an entry on the table.</string>
+        
+        <includefile source="campaign/table_import.xml" />
+        <includefile source="utility/template_utility_adnd.xml" />
+        
+        <!-- Tables -->
+        <icon name="button_importtext_table" file="graphics/buttons/button_import.png" />
+        <icon name="button_importtext_table_down" file="graphics/buttons/button_import_down.png" />
+        
+       	<script name="LibraryDataADND" file="scripts/data_library_adnd.lua" />
+
+    </base>
+    
+</root>

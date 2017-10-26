@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- 
+  Please see the license.html file included with this distribution for 
+  attribution and copyright information.
+-->
+
+<root>
+	<template name="button_import_table">
+		<buttoncontrol insertbefore="filter_sharedonly">
+			<anchored to="rightanchor" width="20" height="20">
+				<top />
+				<right anchor="left" relation="relative" offset="-5" />
+			</anchored>
+			<icon normal="button_importtext_table" pressed="button_importtext_table_down" />
+			<tooltip textres="table_button_import_tooltip" />
+			<script>
+                function onButtonPress()
+                    if User.isHost() then
+                        Interface.openWindow("table_import_window", "");
+                    end
+                end
+            </script>
+			<invisible />
+		</buttoncontrol>
+	</template>
+        <template name ="anchor_left">
+        <genericcontrol name="leftanchor">
+            <anchored width="0" height="0">
+                <top />
+                <left />
+            </anchored>
+            <invisible />
+        </genericcontrol>
+    </template>
+    <template name ="anchor_right">
+    <genericcontrol name="rightanchor">
+        <anchored width="0" height="0">
+            <top />
+            <right />
+        </anchored>
+        <invisible />
+    </genericcontrol>
+    </template>
+
+</root>
