@@ -13,7 +13,7 @@
 		</description>
 	</properties>
 
-    <announcement text="Table Import - Extension v1.3\rCoreRPG/5E version for Fantasy Grounds\r--by Celestian 2017.10.24" font="emotefont" />
+    <announcement text="Table Import - Extension v1.4\rCoreRPG/5E version for Fantasy Grounds\r--by Celestian 2017.10.24" font="emotefont" />
 	<base>		
         
         <string name="table_button_import_tooltip">Text import to table.</string>
