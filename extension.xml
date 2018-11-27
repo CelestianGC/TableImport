@@ -4,7 +4,7 @@
 
 	<properties>
 		<name>CoreRPG - Table Import</name>
-		<version>1.4</version>
+		<version>1.5</version>
 		<loadorder>99</loadorder>
 		<description>
 			<text>Table Import, Simple line by line text list of table entries will be imported and assigned values.</text>
@@ -13,7 +13,7 @@
 		</description>
 	</properties>
 
-    <announcement text="Table Import - Extension v1.4\rCoreRPG/5E version for Fantasy Grounds\r--by Celestian 2017.10.24" font="emotefont" />
+    <announcement text="Table Import - Extension v1.5\rCoreRPG version for Fantasy Grounds\r--by Celestian 2017.10.24" font="emotefont" />
 	<base>		
         
         <string name="table_button_import_tooltip">Text import to table.</string>
