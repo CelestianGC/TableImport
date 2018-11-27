@@ -39,11 +39,7 @@ function importTextAsTable()
         local nodeTableRows = nodeTable.createChild("tablerows");
         for _,sTableLines in ipairs(aTableText) do
           local nStart, nLast = 0;
-Debug.console("table_import.lua","importTextAsTable","sTableLines",sTableLines);          
           local sStart, sLast, sText = sTableLines:match("^(%d+)-(%d+) (.*)"); -- grab 1-10 numbers
-Debug.console("table_import.lua","importTextAsTable","sStart",sStart);          
-Debug.console("table_import.lua","importTextAsTable","sLast",sLast);
-Debug.console("table_import.lua","importTextAsTable","sText",sText);
           if (sStart == nil or sLast == nil) then -- check for just a single starting number then
             sStart, sText = sTableLines:match("^(%d+) (.*)");
           end
@@ -55,15 +51,11 @@ Debug.console("table_import.lua","importTextAsTable","sText",sText);
             nLast = tonumber(sLast) or 1;
             nNewRow = nNewRow + 1;
           else
-Debug.console("table_import.lua","importTextAsTable","NO # MATCH---sTableLines--->",sTableLines);
             sText = sTableLines;
             nNewRow = nNewRow + 1;
             nStart = nNewRow-1;
             nLast = nNewRow-1;
           end
-Debug.console("table_import.lua","importTextAsTable","nStart",nStart);          
-Debug.console("table_import.lua","importTextAsTable","nLast",nLast);
-Debug.console("table_import.lua","importTextAsTable","nNewRow",nNewRow);
           if (nNewRow ~= 1) then -- use line 1 as title/name of table
             local nodeRow = nodeTableRows.createChild();
             DB.setValue(nodeRow, "fromrange", "number", nStart);
