@@ -41,7 +41,7 @@ function importTextAsTable()
           local nStart, nLast = 0;
           local sStart, sLast, sText = sTableLines:match("^(%d+)-(%d+) (.*)"); -- grab 1-10 numbers
           if (sStart == nil or sLast == nil) then -- check for just a single starting number then
-            sStart, sText = sTableLines:match("^(%d+) (.*)");
+            sStart, sText = sTableLines:match("^(%d+)%.? (.*)");
           end
           if (sStart ~= nil) then -- we got at least 1 number
             if sLast == nil then  -- just a single number
