@@ -42,7 +42,7 @@ function importTextAsTable()
         local nodeTableRows = nodeTable.createChild("tablerows");
         for _,sTableLines in ipairs(aTableText) do
           local nStart, nLast = 0;
-          local sStart, sLast, sText = sTableLines:match("^(%d+)-(%d+) (.*)"); -- grab 1-10 numbers
+          local sStart, sLast, sText = sTableLines:match("^(%d+)%s?-%s?(%d+) (.*)"); -- grab 1-10 numbers
           if (sStart == nil or sLast == nil) then -- check for just a single starting number then
             sStart, sText = sTableLines:match("^(%d+)%.? (.*)");
           end
