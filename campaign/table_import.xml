@@ -143,19 +143,20 @@
 			<readonly />
 		</stringcontrol>
 	</template>
-	<font name="subwindowtitle">
+<!-- 	<font name="subwindowtitle">
 		<fgffile name="graphics/fonts/title-regular-10.fgf" />
-    <ttf file="graphics/fonts/Open_Sans/OpenSans-Regular.ttf" name="Open Sans" size="10" />
+    <ttf file="graphics/fonts/Open_Sans/OpenSans-Regular.ttf" name="Open Sans" size="12" />
 		<color value="DED1B1" />
 		<shadow offset="2,2" color="000000" />
 	</font>
 	<font name="subwindowsmalltitle">
 		<fgffile name="graphics/fonts/bold-10.fgf" />
-    <ttf file="graphics/fonts/Open_Sans/OpenSans-Bold.ttf" name="Open Sans" size="10" />
+    <ttf file="graphics/fonts/Open_Sans/OpenSans-Bold.ttf" name="Open Sans" size="12" />
 		<color value="FFF1CC" />
 		<shadow offset="1,1" color="000000" />
 	</font>
-	<template name="scrollbar_charcontents">
+ -->	
+  <template name="scrollbar_charcontents">
 		<scrollbar>
 			<anchored to="contents" offset="-5,-10"/>
 			<target>contents</target>

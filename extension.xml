@@ -4,7 +4,7 @@
 
 	<properties>
 		<name>CoreRPG - Table Import</name>
-		<version>2.0</version>
+		<version>2.1</version>
 		<loadorder>99</loadorder>
 		<description>
 			<text>Table Import, Simple line by line text list of table entries will be imported and assigned values.</text>
@@ -13,23 +13,29 @@
 		</description>
 	</properties>
 
-    <announcement text="Table Import - Extension v2.0\rCoreRPG version for Fantasy Grounds\r--by Celestian 2017-2019" font="emotefont" />
+    <announcement text="Table Import - Extension v2.1\rCoreRPG version for Fantasy Grounds\r--by Celestian 2017-2020" font="emotefont" />
 	<base>		
-        
-        <string name="table_button_import_tooltip">Text import to table.</string>
-        <string name="table_import_window_title">IMPORT TABLE</string>
-        <string name="table_import_text_title">IMPORT TEXT</string>
-        <string name="table_import_text_button">Import</string>
-        <string name="table_import_text_helptext">Paste in the text of the table you want to create. The first line will be the name of the table. Each line after will be an entry on the table.</string>
-        
-        <includefile source="campaign/table_import.xml" />
-        <includefile source="utility/template_import.xml" />
-        
-        <!-- Tables -->
-        <icon name="button_importtext_table" file="graphics/buttons/button_import.png" />
-        <icon name="button_importtext_table_down" file="graphics/buttons/button_import_down.png" />
-        
-       	<script name="LibraryDataImport" file="scripts/data_library_import.lua" />
+      <font name="subwindowsmalltitle">
+        <fgffile name="graphics/fonts/bold-10.fgf" />
+        <ttf file="graphics/fonts/Noto_Sans/NotoSans-Bold.ttf" name="Noto Sans Bold" size="12" />
+        <color value="FFF1CC" />
+        <shadow offset="1,1" color="000000" />
+      </font>        
+
+      <string name="table_button_import_tooltip">Text import to table.</string>
+      <string name="table_import_window_title">IMPORT TABLE</string>
+      <string name="table_import_text_title">IMPORT TEXT</string>
+      <string name="table_import_text_button">Import</string>
+      <string name="table_import_text_helptext">Paste in the text of the table you want to create. The first line will be the name of the table. Each line after will be an entry on the table.</string>
+      
+      <includefile source="campaign/table_import.xml" />
+      <includefile source="utility/template_import.xml" />
+      
+      <!-- Tables -->
+      <icon name="button_importtext_table" file="graphics/buttons/button_import.png" />
+      <icon name="button_importtext_table_down" file="graphics/buttons/button_import_down.png" />
+      
+      <script name="LibraryDataImport" file="scripts/data_library_import.lua" />
 
     </base>
     

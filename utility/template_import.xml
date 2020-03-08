@@ -24,7 +24,7 @@
 			<invisible />
 		</buttoncontrol>
 	</template>
-        <template name ="anchor_left">
+  <template name ="anchor_left">
         <genericcontrol name="leftanchor">
             <anchored width="0" height="0">
                 <top />
