@@ -29,7 +29,7 @@
             <anchor_title_charsheethelper name="contentanchor" />
 			<anchor_left />
             <anchor_right />
-            <label_charframetop>
+      <label_frametop>
 				<anchored>
 					<top parent="contentanchor" anchor="bottom" relation="relative" offset="5" />
 					<left parent="leftanchor" anchor="right" relation="relative" offset="35" />
@@ -37,16 +37,16 @@
 				</anchored>
                 <multilinespacing>20</multilinespacing>
 				<static textres="table_import_text_helptext" />
-			</label_charframetop>
+			</label_frametop>
 
-            <label_charframetop name="importtabletitle">
+      <label_frametop name="importtabletitle">
 				<anchored height="20">
 					<top parent="contentanchor" anchor="bottom" relation="relative" offset="5" />
 					<left offset="35"/>
 					<right offset="-45"/>
 				</anchored>
 				<static textres="table_import_text_title" />
-			</label_charframetop>
+			</label_frametop>
             
 			<subwindow name="contents">
 				<anchored>
@@ -125,37 +125,6 @@
 			<disabled />
 		</genericcontrol>
 	</template>
-	<template name="label_charframetop">
-		<metalplate>
-			<frame name="metalplate" offset="10,2,10,2"/>
-			<font>subwindowsmalltitle</font>
-			<center />
-			<nodrag />
-			<readonly />
-			<script file="campaign/scripts/char_labelframetop.lua" />
-		</metalplate>
-	</template>
-	<template name="metalplate">
-		<stringcontrol>
-			<frame name="metalplate" offset="10,2,10,2"/>
-			<font>subwindowtitle</font>
-			<nodrag />
-			<readonly />
-		</stringcontrol>
-	</template>
-<!-- 	<font name="subwindowtitle">
-		<fgffile name="graphics/fonts/title-regular-10.fgf" />
-    <ttf file="graphics/fonts/Open_Sans/OpenSans-Regular.ttf" name="Open Sans" size="12" />
-		<color value="DED1B1" />
-		<shadow offset="2,2" color="000000" />
-	</font>
-	<font name="subwindowsmalltitle">
-		<fgffile name="graphics/fonts/bold-10.fgf" />
-    <ttf file="graphics/fonts/Open_Sans/OpenSans-Bold.ttf" name="Open Sans" size="12" />
-		<color value="FFF1CC" />
-		<shadow offset="1,1" color="000000" />
-	</font>
- -->	
   <template name="scrollbar_charcontents">
 		<scrollbar>
 			<anchored to="contents" offset="-5,-10"/>

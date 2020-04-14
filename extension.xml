@@ -4,7 +4,7 @@
 
 	<properties>
 		<name>CoreRPG - Table Import</name>
-		<version>2.1</version>
+		<version>2.2</version>
 		<loadorder>99</loadorder>
 		<description>
 			<text>Table Import, Simple line by line text list of table entries will be imported and assigned values.</text>
@@ -13,7 +13,7 @@
 		</description>
 	</properties>
 
-    <announcement text="Table Import - Extension v2.1\rCoreRPG version for Fantasy Grounds\r--by Celestian 2017-2020" font="emotefont" />
+    <announcement text="Table Import - Extension v2.2\rCoreRPG version for Fantasy Grounds\r--by Celestian 2017-2020" font="emotefont" />
 	<base>		
       <font name="subwindowsmalltitle">
         <fgffile name="graphics/fonts/bold-10.fgf" />
